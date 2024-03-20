@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ListingAllFilesInAFolder01 listingAllFilesInAFolder01 = new ListingAllFilesInAFolder01();
+        listingAllFilesInAFolder01.printDirectory("module05/src/Task01File");
     }
 }

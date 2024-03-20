@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class Square04 {
+public class Square04 {
 }

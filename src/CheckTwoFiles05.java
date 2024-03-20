@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class CheckTwoFiles05 {
+public class CheckTwoFiles05 {
 }

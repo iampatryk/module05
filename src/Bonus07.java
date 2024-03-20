@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class Bonus07 {
+public class Bonus07 {
 }

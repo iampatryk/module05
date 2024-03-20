@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class CreateNewFile02 {
+public class CreateNewFile02 {
 }
