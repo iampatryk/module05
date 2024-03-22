@@ -6,7 +6,7 @@ public class CreateNewFile02 {
 
 
     public void createNewFile() {
-
+    // tworzenie pliku o nazwie jaka poda urzytkownik
         Scanner sc = new Scanner(System.in);
         System.out.println("Entry file name: ");
         String nameNewFile = sc.nextLine();
@@ -26,7 +26,7 @@ public class CreateNewFile02 {
     }
 
     public boolean writeUserInputToFile() {
-
+    // Zapis danych jakie poda urzytkownik do pliku. + BONUS
         Scanner sc = new Scanner(System.in);
         System.out.println("Entry text to save in file: ");
         String textToSave = sc.nextLine();
@@ -34,8 +34,22 @@ public class CreateNewFile02 {
         File file = new File("src/testFile001.txt");
 
         try (FileWriter writer = new FileWriter(file); BufferedWriter bufferedWriter = new BufferedWriter(writer);) {
+
+            String[] words = textToSave.split("\\s+");
+            int wordsCount = 0;
+            for(String word : words) {
+                writer.write(word);
+                wordsCount++;
+                if(wordsCount == 4) {
+                    writer.write("\n");
+                    wordsCount = 0;
+                } else {
+                    writer.write(" ");
+                }
+            }
+
             file.createNewFile();
-            bufferedWriter.write(textToSave);
+//            bufferedWriter.write(textToSave);
             bufferedWriter.flush();
             return true;
         } catch (IOException ioException) {
@@ -45,7 +59,7 @@ public class CreateNewFile02 {
     }
 
     public String readFromFile(String fileName) {
-
+    // Odczyt danych z pliku.
         String text;
 
         File file = new File(fileName);
@@ -69,7 +83,7 @@ public class CreateNewFile02 {
     }
 
     public void printFileContentFromInputUser() {
-
+    // drukowanie danych z pliku jaki poda uzytkownik
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter file name: ");
         String fileName = sc.nextLine();
