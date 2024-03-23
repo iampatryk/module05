@@ -97,6 +97,8 @@ public class CreateNewFile02 {
         }
     }
 
+
+
 //    public void printFileContentFromInput(String fileName) {
 //
 //        Scanner sc = new Scanner(System.in);
