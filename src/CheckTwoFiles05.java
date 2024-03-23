@@ -1,31 +1,37 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class CheckTwoFiles05 {
 
-    public boolean areTextFilesEqual(String filePath1, String filePath2) throws IOException {
+    public boolean areTextFilesEqual(String filePath1, String filePath2) {
 
-        Scanner sc1 = new Scanner(filePath1);
-        Scanner sc2 = new Scanner(filePath2);
+        try (BufferedReader reader1 = new BufferedReader(new FileReader(filePath1));
+             BufferedReader reader2 = new BufferedReader(new FileReader(filePath2))) {
 
-        while (sc1.hasNextLine() && sc2.hasNextLine()) {
-            String line1 = sc1.nextLine();
-            String line2 = sc2.nextLine();
+            String line1, line2;
+            int lineNumber = 1;
 
-            if(!line1.equals(line2)) {
-                sc1.close();
-                sc2.close();
-                return false;
+            while (true) {
+                line1 = reader1.readLine();
+                line2 = reader2.readLine();
+
+                // Jeśli jedna z linii jest null, to sprawdzamy czy obie są null
+                if (line1 == null || line2 == null) {
+                    return line1 == line2;
+                    // Zwracamy true, jeśli obie linie są null, w przeciwnym razie false
+                }
+
+                lineNumber++;
+
+                if (!line1.equals(line2)) {
+                    return false;
+                }
             }
+
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+            return false;
         }
-
-        boolean result = !sc1.hasNextLine() && sc2.hasNextLine();
-        sc1.close();
-        sc2.close();
-        return result;
-
     }
 }
 
