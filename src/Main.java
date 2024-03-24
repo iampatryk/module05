@@ -1,7 +1,4 @@
-import geometric.GeometricFigure03;
-import geometric.Hexagon;
-import geometric.Rectangle;
-import geometric.Triangle;
+import geometric.*;
 
 import java.io.IOException;
 
@@ -11,17 +8,17 @@ public class Main {
 
 //        ListingAllFilesInAFolder01 taks01 = new ListingAllFilesInAFolder01();
 //        taks01.printDirectory("src/");
-
-
-
+//
+//
+//
 //        CreateNewFile02 createNewFile02 = new CreateNewFile02();
 //        createNewFile02.createNewFile();
 //        createNewFile02.writeUserInputToFile();
 //        System.out.println(createNewFile02.readFromFile("src/Task01File/testTask01"));
 //        createNewFile02.printFileContentFromInputUser();
-
-
-
+//
+//
+//
 //        CheckTwoFiles05 checkTwoFiles05 = new CheckTwoFiles05();
 //
 //        String filePath1 = ("src/test1");
@@ -32,9 +29,9 @@ public class Main {
 //        } else {
 //            System.out.println("Pliki różnią się co najmniej w jednym miejscu.");
 //        }
-
-
-
+//
+//
+//
 //        TakeAPathToTheFileAndLoadContents06 task06 = new TakeAPathToTheFileAndLoadContents06();
 //
 //        String filePath = "src/test2";
@@ -44,11 +41,19 @@ public class Main {
 //            System.out.println("Error, try again. ");
 //        }
 
-        Triangle triangle = new Triangle(3,4);
+
+
+        Rectangle rectangle = new Rectangle(7,8);
+        System.out.println(rectangle.calculateArea());
+
+        Triangle triangle = new Triangle(3,6);
         System.out.println(triangle.calculateArea());
 
         Hexagon hexagon = new Hexagon(4);
         System.out.println(hexagon.calculateArea());
+
+        Square04 dimRectangle = new Square04(5,5);
+        System.out.println("Diameter of Rectangle: " + dimRectangle.calculateDiameter());
 
 
     }

@@ -2,8 +2,8 @@ package geometric;
 
 public class Rectangle implements GeometricFigure03 {
 
-    private double length;
-    private double width;
+    double length;
+    double width;
 
     public Rectangle(double length, double width) {
         this.length = length;
