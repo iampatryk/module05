@@ -16,7 +16,6 @@ public class ListingAllFilesInAFolder01 {
         } else {
             System.out.println("Entered directory doesn't exist. ");
         }
-
     }
 }
 

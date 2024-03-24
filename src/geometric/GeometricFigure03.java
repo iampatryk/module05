@@ -1,3 +1,5 @@
+package geometric;
+
 public interface GeometricFigure03 {
 
     public double calculateArea();

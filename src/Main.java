@@ -1,3 +1,8 @@
+import geometric.GeometricFigure03;
+import geometric.Hexagon;
+import geometric.Rectangle;
+import geometric.Triangle;
+
 import java.io.IOException;
 
 public class Main {
@@ -38,6 +43,12 @@ public class Main {
 //        } else {
 //            System.out.println("Error, try again. ");
 //        }
+
+        Triangle triangle = new Triangle(3,4);
+        System.out.println(triangle.calculateArea());
+
+        Hexagon hexagon = new Hexagon(4);
+        System.out.println(hexagon.calculateArea());
 
 
     }
