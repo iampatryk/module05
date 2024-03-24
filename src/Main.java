@@ -4,6 +4,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
 
+//        ListingAllFilesInAFolder01 taks01 = new ListingAllFilesInAFolder01();
+//        taks01.printDirectory("src/");
+
+
+
 //        CreateNewFile02 createNewFile02 = new CreateNewFile02();
 //        createNewFile02.createNewFile();
 //        createNewFile02.writeUserInputToFile();
@@ -25,14 +30,14 @@ public class Main {
 
 
 
-        TakeAPathToTheFileAndLoadContents06 task06 = new TakeAPathToTheFileAndLoadContents06();
-
-        String filePath = "src/test2";
-        if(task06.invertFile(filePath)) {
-            System.out.println("File reverse correct.");
-        } else {
-            System.out.println("Error, try again. ");
-        }
+//        TakeAPathToTheFileAndLoadContents06 task06 = new TakeAPathToTheFileAndLoadContents06();
+//
+//        String filePath = "src/test2";
+//        if(task06.invertFile(filePath)) {
+//            System.out.println("File reverse correct.");
+//        } else {
+//            System.out.println("Error, try again. ");
+//        }
 
 
     }

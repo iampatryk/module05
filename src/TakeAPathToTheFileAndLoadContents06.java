@@ -29,9 +29,6 @@ public class TakeAPathToTheFileAndLoadContents06 {
             return false;
         }
 
-
-        // Zapis sciezki do nowego pliku w odwroconej kolejnosci, fileReverse: "kota ma Ala"
-        // w przypadku powodzenia zwroci true a niepowodzenia false.
     }
 }
 
