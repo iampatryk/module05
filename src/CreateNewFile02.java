@@ -85,6 +85,7 @@ public class CreateNewFile02 {
     public void printFileContentFromInputUser() {
     // drukowanie danych z pliku jaki poda uzytkownik
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter file name: ");
         String fileName = sc.nextLine();
 
