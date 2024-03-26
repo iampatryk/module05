@@ -1,5 +1,3 @@
-import geometric.*;
-
 import java.io.IOException;
 
 public class Main {
@@ -31,8 +29,8 @@ public class Main {
 //        }
 //
 //
-//
-//        TakeAPathToTheFileAndLoadContents06 task06 = new TakeAPathToTheFileAndLoadContents06();
+
+//        InvertTextToFile06 task06 = new InvertTextToFile06();
 //
 //        String filePath = "src/test2";
 //        if(task06.invertFile(filePath)) {
@@ -43,17 +41,29 @@ public class Main {
 
 
 
-        Rectangle rectangle = new Rectangle(7,8);
-        System.out.println(rectangle.calculateArea());
+        InvertTextToFile06 task06 = new InvertTextToFile06();
 
-        Triangle triangle = new Triangle(3,6);
-        System.out.println(triangle.calculateArea());
+        String inputFilePath = "src/test2";
+        String outputFilePath = "src/test22out";
+        if(task06.invertFile(inputFilePath,outputFilePath)) {
+            System.out.println("File reverse correct.");
+        } else {
+            System.out.println("Error, try again. ");
+        }
 
-        Hexagon hexagon = new Hexagon(4);
-        System.out.println(hexagon.calculateArea());
 
-        Square04 dimRectangle = new Square04(5,5);
-        System.out.println("Diameter of Rectangle: " + dimRectangle.calculateDiameter());
+
+//        Rectangle rectangle = new Rectangle(7,8);
+//        System.out.println(rectangle.calculateArea());
+//
+//        Triangle triangle = new Triangle(3,6);
+//        System.out.println(triangle.calculateArea());
+//
+//        Hexagon hexagon = new Hexagon(4);
+//        System.out.println(hexagon.calculateArea());
+//
+//        Square04 dimRectangle = new Square04(5,5);
+//        System.out.println("Diameter of Rectangle: " + dimRectangle.calculateDiameter());
 
 
     }
