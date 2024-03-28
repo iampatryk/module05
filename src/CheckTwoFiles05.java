@@ -36,6 +36,9 @@ public class CheckTwoFiles05 {
 }
 
 
+// zmienic warunek While(true)
+// walidacje czy jest plikiem i czy istnieje
+
 
 //Napisz program, który sprawdzi, czy 2 pliki tekstowe mają taką samą zawartość:
 //public boolean areTextFilesEqual(String filePath1, String filePath2);

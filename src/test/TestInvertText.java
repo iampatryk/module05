@@ -25,6 +25,7 @@
 //        Assertions.assertEquals(expected, output.trim());
 //
 //    }
+
 //
 //    @Test
 //    public void testInvert() throws IOException {
@@ -44,5 +45,5 @@
 //        Assertions.assertEquals(expected, output.trim());
 //
 //    }
-//
+
 //}

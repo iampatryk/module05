@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class InvertTextToFile06 {
+
 //
 //    public boolean invertFile(String filepath) {
 //        // Otwieranie pliku do odczytu przy uzyciu try a w nim Buffer...
@@ -57,6 +58,8 @@ public class InvertTextToFile06 {
             return false;
         }
     }
+
+    // wykorzystac kod z poprzednich metod .
 
 
     // Ale jest jeszcze inna sprawa mozna zapisywac tez odwrocony tekst do innego pliku:
