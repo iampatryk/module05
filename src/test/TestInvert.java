@@ -16,7 +16,7 @@ public class TestInvert {
 
         String inputFilePath = "src/test2";
         String outputFilePath = "src/test22out";
-        String expected = "kota czarnego ma Ala";
+        String expected = "brazowego i kota czarnego ma Ala";
 
         boolean result = invertText.invertFile(inputFilePath,outputFilePath);
 

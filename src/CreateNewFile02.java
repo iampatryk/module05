@@ -48,7 +48,7 @@ public class CreateNewFile02 {
                 }
             }
 
-            file.createNewFile();
+//            file.createNewFile();
 //            bufferedWriter.write(textToSave);
             bufferedWriter.flush();
             return true;
@@ -65,17 +65,14 @@ public class CreateNewFile02 {
         File file = new File(fileName);
         StringBuilder builder = new StringBuilder();
 
-        try {
+        try(FileReader reader = new FileReader(file);
+            BufferedReader bufferedReader = new BufferedReader(reader);) {
 
-            FileReader reader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(reader);
             text = bufferedReader.readLine();
             while (text != null) {
                 builder.append(text);
                 text = bufferedReader.readLine();
             }
-            reader.close();
-
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }

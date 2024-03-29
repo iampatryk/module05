@@ -4,6 +4,8 @@ public class InvertTextToFile06 {
     public boolean invertFile(String inputFilePath, String outputFilePath) {
         try(BufferedReader reader = new BufferedReader(new FileReader(inputFilePath))) {
             //Odczytywanie zawartosci pliku:
+//            CreateNewFile02 createNewFile02 = new CreateNewFile02();
+//            createNewFile02.readFromFile(inputFilePath);
             String readLine = reader.readLine();
             StringBuilder content = new StringBuilder();
             while (readLine != null) {
@@ -11,6 +13,12 @@ public class InvertTextToFile06 {
                 readLine = reader.readLine();
             }
             // odwracanie tekstu
+
+//            String[] words = createNewFile02.readFromFile(outputFilePath).toString().trim().split("\\s+");
+//            StringBuilder reversedContent = new StringBuilder();
+//            for(int i = words.length - 1; i >= 0; i--) {
+//                reversedContent.append(words[i]).append(" ");
+//            }
             String[] words = content.toString().trim().split("\\s+");
             StringBuilder reversedContent = new StringBuilder();
             for(int i = words.length - 1; i >= 0; i--) {
