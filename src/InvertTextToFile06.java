@@ -1,29 +1,28 @@
 import java.io.*;
 
 public class InvertTextToFile06 {
+
+
+
     public boolean invertFile(String inputFilePath, String outputFilePath) {
+
         try(BufferedReader reader = new BufferedReader(new FileReader(inputFilePath))) {
+
             //Odczytywanie zawartosci pliku:
-//            CreateNewFile02 createNewFile02 = new CreateNewFile02();
-//            createNewFile02.readFromFile(inputFilePath);
             String readLine = reader.readLine();
             StringBuilder content = new StringBuilder();
             while (readLine != null) {
                 content.append(readLine).append("\n");
                 readLine = reader.readLine();
             }
-            // odwracanie tekstu
 
-//            String[] words = createNewFile02.readFromFile(outputFilePath).toString().trim().split("\\s+");
-//            StringBuilder reversedContent = new StringBuilder();
-//            for(int i = words.length - 1; i >= 0; i--) {
-//                reversedContent.append(words[i]).append(" ");
-//            }
+            // odwracanie tekstu
             String[] words = content.toString().trim().split("\\s+");
             StringBuilder reversedContent = new StringBuilder();
             for(int i = words.length - 1; i >= 0; i--) {
                 reversedContent.append(words[i]).append(" ");
             }
+
             //zapis pliku
             BufferedWriter writer = new BufferedWriter(new FileWriter(outputFilePath));
             writer.write(reversedContent.toString().trim());
@@ -36,36 +35,6 @@ public class InvertTextToFile06 {
         }
     }
 
-//
-//    public boolean invertFile(String filepath) {
-//        // Otwieranie pliku do odczytu przy uzyciu try a w nim Buffer...
-//        try(BufferedReader reader = new BufferedReader(new FileReader(filepath))) {
-//            //Odczytywanie zawartosci pliku:
-//            String readLine = reader.readLine();
-//            StringBuilder content = new StringBuilder();
-//            while (readLine != null) {
-//                content.append(readLine).append("\n");
-//                readLine = reader.readLine();
-//            }
-//            // odwracanie tekstu
-//            String[] words = content.toString().trim().split("\\s+");
-//            StringBuilder reversedContent = new StringBuilder();
-//            for(int i = words.length - 1; i >= 0; i--) {
-//                reversedContent.append(words[i]).append(" ");
-//            }
-//            //zapis pliku
-//            BufferedWriter writer = new BufferedWriter(new FileWriter(filepath));
-//            writer.write(reversedContent.toString().trim());
-//            writer.close();
-//            return true;
-//
-//        } catch (IOException ioException) {
-//            ioException.printStackTrace();
-//            return false;
-//        }
-//
-
-//    }
 
     // wykorzystac kod z poprzednich metod .
 

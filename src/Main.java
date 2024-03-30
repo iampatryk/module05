@@ -19,8 +19,8 @@ public class Main {
 //
 //        CheckTwoFiles05 checkTwoFiles05 = new CheckTwoFiles05();
 //
-//        String filePath1 = ("src/test1");
-//        String filePath2 = ("src/test2");
+//        String filePath1 = ("src/test2");
+//        String filePath2 = ("src/test22out");
 //
 //        if (checkTwoFiles05.areTextFilesEqual(filePath1, filePath2)) {
 //            System.out.println("Zawartość obu plików jest identyczna.");

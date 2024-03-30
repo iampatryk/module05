@@ -47,9 +47,6 @@ public class CreateNewFile02 {
                     writer.write(" ");
                 }
             }
-
-//            file.createNewFile();
-//            bufferedWriter.write(textToSave);
             bufferedWriter.flush();
             return true;
         } catch (IOException ioException) {
