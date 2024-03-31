@@ -1,4 +1,5 @@
 import task5and6.FilesAction;
+import task5and6.InvertText;
 
 import java.io.IOException;
 
@@ -70,8 +71,14 @@ public class Main {
 
         // TASKS 5 & 6
         FilesAction filesAction = new FilesAction();
-        filesAction.createFile("newFile01");
-        filesAction.saveTextToFile("newFile01","Ala ma czarnego kota.");
+//        filesAction.createFile("newFile02");
+//        filesAction.saveTextToFile("newFile01","Ala ma czarnego kota.");
+        String fileName = "src/newFile01";
+        filesAction.fileReader(fileName);
+
+//        InvertText invertText = new InvertText();
+//        invertText.invertTextAndSaveToFile("newFile01","newFile03");
+
 
 
 

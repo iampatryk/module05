@@ -1,8 +1,6 @@
 package task5and6;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.FileAlreadyExistsException;
 
 public class FilesAction {
@@ -35,5 +33,18 @@ public class FilesAction {
             }
 
         }
+
+        public void fileReader(String fileName) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+                String line;
+                System.out.println("File name: " + fileName + ":");
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+        }
+
 
 }
