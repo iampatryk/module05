@@ -1,3 +1,5 @@
+import task5and6.FilesAction;
+
 import java.io.IOException;
 
 public class Main {
@@ -41,15 +43,15 @@ public class Main {
 
 
 
-        InvertTextToFile06 task06 = new InvertTextToFile06();
-
-        String inputFilePath = "src/test2";
-        String outputFilePath = "src/test22out";
-        if(task06.invertFile(inputFilePath,outputFilePath)) {
-            System.out.println("File reverse correct.");
-        } else {
-            System.out.println("Error, try again. ");
-        }
+//        InvertTextToFile06 task06 = new InvertTextToFile06();
+//
+//        String inputFilePath = "src/test2";
+//        String outputFilePath = "src/test22out";
+//        if(task06.invertFile(inputFilePath,outputFilePath)) {
+//            System.out.println("File reverse correct.");
+//        } else {
+//            System.out.println("Error, try again. ");
+//        }
 
 
 
@@ -64,6 +66,13 @@ public class Main {
 //
 //        Square04 dimRectangle = new Square04(5,5);
 //        System.out.println("Diameter of Rectangle: " + dimRectangle.calculateDiameter());
+
+
+        // TASKS 5 & 6
+        FilesAction filesAction = new FilesAction();
+        filesAction.createFile("newFile01");
+
+
 
 
     }
