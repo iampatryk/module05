@@ -71,6 +71,8 @@ public class Main {
         // TASKS 5 & 6
         FilesAction filesAction = new FilesAction();
         filesAction.createFile("newFile01");
+        filesAction.saveTextToFile("newFile01","Ala ma czarnego kota.");
+
 
 
 
