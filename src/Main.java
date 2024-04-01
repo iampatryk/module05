@@ -70,14 +70,14 @@ public class Main {
 
 
         // TASKS 5 & 6
-        FilesAction filesAction = new FilesAction();
+//        FilesAction filesAction = new FilesAction();
 //        filesAction.createFile("newFile02");
 //        filesAction.saveTextToFile("newFile01","Ala ma czarnego kota.");
-        String fileName = "src/newFile01";
-        filesAction.fileReader(fileName);
+//        String fileName = "src/newFile01";
+//        filesAction.fileReader(fileName);
 
-//        InvertText invertText = new InvertText();
-//        invertText.invertTextAndSaveToFile("newFile01","newFile03");
+        InvertText invertText = new InvertText();
+        invertText.invertTextAndSaveToFile("newFile01","newFile03");
 
 
 
